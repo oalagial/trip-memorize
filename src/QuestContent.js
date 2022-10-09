@@ -13,9 +13,9 @@ import React from "react";
 const labelStyle = {
   bgcolor: "white",
   m: 1,
-  border: '1px solid red',
+  border: "1px solid red",
   p: 0.5,
-  borderRadius: "16px"
+  borderRadius: "16px",
 };
 
 const QuestContent = () => {
@@ -28,9 +28,9 @@ const QuestContent = () => {
           </Typography>
           <Rating name="simple-controlled" value={4} />
           <Container sx={{ display: "flex", justifyContent: "center" }}>
-            <Box sx={{ ...labelStyle}}>Category1</Box>
-            <Box sx={{ ...labelStyle}}>Category2</Box>
-            <Box sx={{ ...labelStyle}}>Category3</Box>
+            <Box sx={{ ...labelStyle }}>Category1</Box>
+            <Box sx={{ ...labelStyle }}>Category2</Box>
+            <Box sx={{ ...labelStyle }}>Category3</Box>
           </Container>
 
           <Typography sx={{ mb: 1.5 }} color="text.secondary">

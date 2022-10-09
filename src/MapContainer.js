@@ -32,9 +32,13 @@ const MapContainer = () => {
         defaultZoom={13}
       >
         {sights.map((item) => (
-          <MyGreatPlace lat={item.lat} lng={item.lng} text={item.id} id={item.id} />
+          <MyGreatPlace
+            lat={item.lat}
+            lng={item.lng}
+            text={item.id}
+            id={item.id}
+          />
         ))}
-
       </GoogleMapReact>
     </Wrapper>
   );

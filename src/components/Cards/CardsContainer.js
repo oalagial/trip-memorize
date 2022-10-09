@@ -7,8 +7,9 @@ import {
 } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
-import sights from "./data.json";
+import sights from "../../data.json";
 import SightCard from "./SightCard";
+import "./CardsContainer.css";
 
 const Wrapper = styled.div`
   display: flex;
@@ -18,11 +19,16 @@ const Wrapper = styled.div`
 
 const CardsContainer = () => {
   return (
-    <Wrapper>
+    // <Wrapper>
+    //   {sights.map((item) => (
+    //     <SightCard {...item} />
+    //   ))}
+    // </Wrapper>
+    <div class="container">
       {sights.map((item) => (
         <SightCard {...item} />
       ))}
-    </Wrapper>
+    </div>
   );
 };
 
