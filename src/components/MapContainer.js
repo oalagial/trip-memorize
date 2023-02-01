@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import GoogleMapReact from "google-map-react";
-import MyGreatPlace from "./MyGreatPlace/MyGreatPlace";
+import MyGreatPlace from "./MyGreatPlace/MyGreatPlace.jsx";
 import styled from "styled-components";
 import { SightContext } from "../stateManagement/sight-context";
 import sights from "../data.json";
@@ -33,6 +33,7 @@ const MapContainer = () => {
       >
         {sights.map((item) => (
           <MyGreatPlace
+            key={item.id}
             lat={item.lat}
             lng={item.lng}
             text={item.id}

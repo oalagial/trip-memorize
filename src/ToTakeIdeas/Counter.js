@@ -4,7 +4,6 @@ import {
   decrement,
   increment,
   incrementByAmount,
-  incrementAsync,
   selectCount,
 } from "../components/Cards/sightsSlice";
 import styles from "./Counter.module.css";

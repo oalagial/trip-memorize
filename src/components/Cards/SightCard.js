@@ -1,21 +1,11 @@
-import {
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  Typography,
-} from "@mui/material";
 import React, { useContext, useState } from "react";
 import { SightContext } from "../../stateManagement/sight-context";
-import { Link } from "react-router-dom";
 import "./SightCard.css";
 import { useDispatch } from "react-redux";
 import { changeActiveSight } from "./sightsSlice";
 import { storage } from "../../firebase";
 import { ref, uploadBytes } from "firebase/storage";
-import { v4 } from "uuid";
 const SightCard = ({ id, name, location }) => {
-  const { activeSight, setActiveSight } = useContext(SightContext);
   const [imageUpload, setImageUpload] = useState(null);
   const dispatch = useDispatch();
 
@@ -28,11 +18,17 @@ const SightCard = ({ id, name, location }) => {
   };
 
   return (
-    <div class="card" onClick={() => dispatch(changeActiveSight(id))}>
-      <div class="image">
+    // eslint-disable-next-line jsx-a11y/no-static-element-interactions
+    <div
+      className="card"
+      onClick={() => dispatch(changeActiveSight(id))}
+      onKeyUp={() => dispatch(changeActiveSight(id))}
+    >
+      <div className="image">
         <img
           href="#"
           src="https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg"
+          alt=""
         />
       </div>
       <input
@@ -42,8 +38,8 @@ const SightCard = ({ id, name, location }) => {
         }}
       />
       <button onClick={uploadImage}>Upload Image</button>
-      <div class="show">Show me on hover</div>
-      <div class="hide">{name}</div>
+      <div className="show">Show me on hover</div>
+      <div className="hide">{name}</div>
 
       {/* <div class="content">
         <h3>{name}</h3>
