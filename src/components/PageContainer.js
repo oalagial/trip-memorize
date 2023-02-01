@@ -1,8 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import styled from "styled-components";
-import CardsContainer from "./components/Cards/CardsContainer";
-import { selectCount } from "./components/Cards/sightsSlice";
+import CardsContainer from "./Cards/CardsContainer.tsx";
+import { selectCount } from "./Cards/sightsSlice";
+import Header from "./Header/Header.tsx";
 import MapContainer from "./MapContainer";
 
 const Wrapper = styled.div`
@@ -18,6 +19,7 @@ const PageContainer = () => {
 
   return (
     <Wrapper>
+      <Header />
       <h1>{activeSight}</h1>
       <MapContainer />
       <CardsContainer />

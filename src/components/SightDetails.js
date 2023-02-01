@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, Outlet, useNavigate, useParams } from "react-router-dom";
-import sights from "./data.json";
+import sights from "../data.json";
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
 import Button from "@mui/material/Button";

@@ -4,9 +4,9 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 import "./MyGreatPlace.css";
-import { SightContext } from "./sight-context";
+import { SightContext } from "../../stateManagement/sight-context";
 import { useSelector } from "react-redux";
-import { selectCount } from "./components/Cards/sightsSlice.js";
+import { selectCount } from "../Cards/sightsSlice.js";
 
 const K_WIDTH = 40;
 const K_HEIGHT = 40;

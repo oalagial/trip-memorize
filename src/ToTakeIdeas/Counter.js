@@ -6,7 +6,7 @@ import {
   incrementByAmount,
   incrementAsync,
   selectCount,
-} from "./components/Cards/sightsSlice";
+} from "../components/Cards/sightsSlice";
 import styles from "./Counter.module.css";
 
 const Counter = () => {

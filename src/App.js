@@ -1,12 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
-import PageContainer from "./PageContainer";
-import { SightProvider } from "./sight-context";
+import PageContainer from "./components/PageContainer";
+import { SightProvider } from "./stateManagement/sight-context";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import TestCompo from "./TestCompo";
-import SightDetails from "./SightDetails";
-import LocationContent from "./LocationContent";
-import QuestContent from "./QuestContent";
+import TestCompo from "./ToTakeIdeas/TestCompo";
+import SightDetails from "./components/SightDetails";
+import LocationContent from "./components/LocationContent";
+import QuestContent from "./components/QuestContent";
 
 function App() {
   return (

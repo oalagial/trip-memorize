@@ -6,7 +6,7 @@ import {
   Typography,
 } from "@mui/material";
 import React, { useContext, useState } from "react";
-import { SightContext } from "../../sight-context";
+import { SightContext } from "../../stateManagement/sight-context";
 import { Link } from "react-router-dom";
 import "./SightCard.css";
 import { useDispatch } from "react-redux";

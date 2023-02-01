@@ -1,9 +1,9 @@
 import React, { useContext, useEffect } from "react";
 import GoogleMapReact from "google-map-react";
-import MyGreatPlace from "./MyGreatPlace";
+import MyGreatPlace from "./MyGreatPlace/MyGreatPlace";
 import styled from "styled-components";
-import { SightContext } from "./sight-context";
-import sights from "./data.json";
+import { SightContext } from "../stateManagement/sight-context";
+import sights from "../data.json";
 
 const Wrapper = styled.div`
   flex-grow: 1;
