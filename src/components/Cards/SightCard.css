@@ -1,13 +1,13 @@
 .card {
   position: relative;
-  max-width: 300px;
+  max-width: 500px;
   height: 215px;
   background-color: #fff;
   margin: 30px 10px;
   padding: 20px 15px;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
   border-radius: 15px;
@@ -17,14 +17,11 @@
 }
 
 .card .image {
-  position: relative;
+  /* position: relative; */
   width: 260px;
-  height: 360px;
-
-  top: -80%;
   left: 8px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .card .image img {
@@ -32,8 +29,19 @@
   border-radius: 15px;
 }
 
+.card .title {
+  font-size: 26px;
+  font-weight: bold;
+}
+
 .card .content {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+
+  /* position: relative;
   top: -140px;
   padding: 10px 15px;
   color: #111;
@@ -41,7 +49,7 @@
 
   visibility: hidden;
   opacity: 0;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; */
 }
 
 .card:hover .content {

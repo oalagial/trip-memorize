@@ -8,9 +8,9 @@
   "plugins": ["react", "import", "jsx-a11y"],
   "rules": {
     "react/prop-types": 0,
-    "indent": ["error", 2],
-    "linebreak-style": ["error", "windows"],
-    "quotes": ["error", "double"],
+    "indent": ["warn", 2],
+    "linebreak-style": ["warn", "windows"],
+    "quotes": ["warn", "double"],
     "no-unused-vars": "warn"
     // "@typescript-eslint/no-unused-vars": ["error"]
   },

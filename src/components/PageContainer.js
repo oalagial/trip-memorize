@@ -18,12 +18,13 @@ const PageContainer = () => {
   // const [incrementAmount, setIncrementAmount] = React.useStasightsSlicete('2');
 
   return (
-    <Wrapper>
-      <Header />
-      <h1>{activeSight}</h1>
-      <MapContainer />
-      <CardsContainer />
-    </Wrapper>
+    // <Wrapper>
+    //   <Header />
+    //   <h1>{activeSight}</h1>
+    //   <MapContainer />
+    //   <CardsContainer />
+    // </Wrapper>
+    <CardsContainer />
   );
 };
 

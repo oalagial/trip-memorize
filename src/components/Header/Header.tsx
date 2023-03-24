@@ -8,11 +8,11 @@ const Header: React.FC = props => {
 
   }
 
-      return (
-        <div>
-           <Button variant="outlined">Outlined</Button>
- 
-        </div>
+    return (
+      <div>
+          <Button variant="outlined">Outlined</Button>
+
+      </div>
     );
 };
 

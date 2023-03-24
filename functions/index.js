@@ -1,5 +1,5 @@
 const functions = require("firebase-functions");
-const {initializeApp} = require("firebase-admin/app");
+const { initializeApp } = require("firebase-admin/app");
 const f1 = require("@ffmpeg-installer/ffmpeg");
 const f2 = require("@ffprobe-installer/ffprobe");
 const ffmpeg = require("fluent-ffmpeg");
@@ -52,18 +52,18 @@ exports.onFileChange = functions.storage.object().onFinalize((event) => {
   };
 
   videoshow(images, videoOptions)
-  //   .audio("audio.mp3")
-      .save("video.mp4")
-      .on("start", function(command) {
-        console.log("ffmpeg process started:", command);
-      })
-      .on("error", function(err, stdout, stderr) {
-        console.error("Error:", err);
-        console.error("ffmpeg stderr:", stderr);
-      })
-      .on("end", function(output) {
-        console.error("Video created in:", output);
-      });
+    //   .audio("audio.mp3")
+    .save("video2.mp4")
+    .on("start", function (command) {
+      console.log("ffmpeg process started:", command);
+    })
+    .on("error", function (err, stdout, stderr) {
+      console.error("Error:", err);
+      console.error("ffmpeg stderr:", stderr);
+    })
+    .on("end", function (output) {
+      console.error("Video created in:", output);
+    });
 
   return;
 });
