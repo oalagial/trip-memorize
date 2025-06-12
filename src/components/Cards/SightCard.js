@@ -3,8 +3,6 @@ import { SightContext } from "../../stateManagement/sight-context";
 import "./SightCard.css";
 import { useDispatch } from "react-redux";
 import { changeActiveSight } from "./sightsSlice";
-import { storage } from "../../firebase";
-import { ref, uploadBytes } from "firebase/storage";
 import { Button } from "@mui/material";
 const SightCard = ({ id, name, location }) => {
   const [imageUpload, setImageUpload] = useState(null);
