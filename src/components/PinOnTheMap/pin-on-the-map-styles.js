@@ -1,7 +1,7 @@
 const K_WIDTH = 40;
 const K_HEIGHT = 40;
 
-const greatPlaceStyle = {
+const pinOnTheMapStyle = {
   // initially any map object has left top corner at lat lng coordinates
   // it's on you to set object origin to 0,0 coordinates
   position: "absolute",
@@ -19,4 +19,4 @@ const greatPlaceStyle = {
   padding: 4,
 };
 
-export { greatPlaceStyle };
+export { pinOnTheMapStyle };

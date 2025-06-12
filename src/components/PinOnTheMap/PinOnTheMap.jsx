@@ -1,11 +1,11 @@
 import { Component, useContext } from "react";
-import { greatPlaceStyle } from "./my_great_place_styles.js";
+import { pinOnTheMapStyle } from "./pin-on-the-map-styles.js";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import React from "react";
 
-import "./MyGreatPlace.css";
-import { SightContext } from "../../stateManagement/sight-context";
+import "./PinOnTheMap.css";
+import { SightContext } from "../../stateManagement/sight-context.js";
 import { useSelector } from "react-redux";
 import { selectCount } from "../Cards/sightsSlice.js";
 
@@ -29,18 +29,18 @@ const MarkerWrapper = styled.div`
   padding: 4px;
 `;
 
-const MyGreatPlace = ({ text, id }) => {
+const PinOnTheMap = ({ text, id }) => {
   const activeSight = useSelector(selectCount);
 
   return (
-    <div className={id === activeSight ? "active" : ""} style={greatPlaceStyle}>
+    <div className={id === activeSight ? "active" : ""} style={pinOnTheMapStyle}>
       {text}
     </div>
   );
 };
 
-export default MyGreatPlace;
+export default PinOnTheMap;
 
-// MyGreatPlace.propTypes = {
+// PinOnTheMap.propTypes = {
 //   text: PropTypes.string,
 // };

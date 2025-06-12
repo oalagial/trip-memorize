@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import GoogleMapReact from "google-map-react";
-import MyGreatPlace from "./MyGreatPlace/MyGreatPlace.jsx";
+import PinOnTheMap from "./PinOnTheMap/PinOnTheMap.jsx";
 import styled from "styled-components";
 import { SightContext } from "../stateManagement/sight-context";
 import sights from "../data.json";
@@ -32,7 +32,7 @@ const MapContainer = () => {
         defaultZoom={13}
       >
         {sights.map((item) => (
-          <MyGreatPlace
+          <PinOnTheMap
             key={item.id}
             lat={item.lat}
             lng={item.lng}

@@ -19,14 +19,6 @@ const Wrapper = styled.div`
     margin: 1rem;
   `;
 
-// export interface Sight {
-//   "id": number,
-//   "name": string,
-//   "location": string,
-//   "lat": number,
-//   "lng": number
-// }
-
 const CardsContainer: React.FC = () => {
   return (
     // <Wrapper>
