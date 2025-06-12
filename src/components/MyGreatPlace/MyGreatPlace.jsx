@@ -2,6 +2,7 @@ import { Component, useContext } from "react";
 import { greatPlaceStyle } from "./my_great_place_styles.js";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import React from "react";
 
 import "./MyGreatPlace.css";
 import { SightContext } from "../../stateManagement/sight-context";

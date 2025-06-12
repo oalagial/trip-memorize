@@ -22,7 +22,8 @@ const SightCard = ({ id, name, location }) => {
 
   const handleUpload = () => {
     const formData = new FormData();
-    formData.append("profile", imageUpload);
+    console.log("Image to upload:", imageUpload);
+    formData.append("image", imageUpload);
 
     fetch("http://localhost:4000/upload", {
       method: "POST",

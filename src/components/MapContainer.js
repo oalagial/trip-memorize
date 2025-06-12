@@ -23,7 +23,7 @@ const MapContainer = () => {
   return (
     <Wrapper>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyBnSabUEma1xUqmGm9YlzncfcAUHyXFiZw" }}
+        bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
         defaultCenter={{
           lat: 37.9715,
           lng: 23.7262,
