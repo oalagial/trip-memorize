@@ -2,7 +2,6 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PageContainer from "./components/PageContainer";
 import { SightProvider } from "./stateManagement/sight-context";
-import TestCompo from "./ToTakeIdeas/TestCompo";
 import SightDetails from "./components/SightDetails";
 import LocationContent from "./components/LocationContent";
 import QuestContent from "./components/QuestContent";
